@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
     imageUrl: "https://res.cloudinary.com/ugwutotheeshoes/image/upload/v1647525808/protocolo-open-graph_cqwxrx.jpg",
     type: 'article',
     twitterHandle: "https://twitter.com/ugwutotheeshoes",
-    date: null,
+    date: '17/03/2022',
   };
   return (
     <div className={styles.container}>
@@ -29,7 +28,6 @@ export default function Home() {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
